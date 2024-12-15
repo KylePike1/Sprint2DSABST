@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <title>Previous Trees</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Previous Trees</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Input Numbers</th>
+        <th>Tree Structure</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="tree : ${trees}">
+        <td th:text="${tree.getId}"></td>
+        <td th:text="${tree.inputNumbers}"></td>
+        <td th:text="${tree.treeStructure}"></td>
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/}">Back to Homepage</a>
+</body>
+</html>
